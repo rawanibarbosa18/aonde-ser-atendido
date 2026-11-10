@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saúde - Onde Sou Atendido?</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <div class="logo">
+            Onde Sou Atendido?
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="consulta.html">Categorias</a>
+        </nav>
+
+    </header>
+
+
+    <!-- PESQUISA -->
+
+    <section class="pesquisa" id="pesquisar">
+
+        <h2>Encontre uma unidade de saúde</h2>
+
+        <p>
+            Informe o CEP da região onde deseja atendimento.
+        </p>
+
+        <div class="caixa">
+
+            <form id="formBusca">
+
+                <label for="cep">Digite seu CEP:</label>
+
+                <input
+                    type="text"
+                    id="cep"
+                    name="cep"
+                    placeholder="Ex.: 01001-000"
+                    maxlength="9"
+                    pattern="[0-9]{5}-?[0-9]{3}"
+                    required
+                >
+
+                <label for="tipo">Tipo de atendimento:</label>
+
+                <select id="categoria" name="categoria" required>
+
+                    <option value="">Selecione uma opção</option>
+
+                    <option value="ubs">UBS</option>
+
+                    <option value="hospital">Hospital</option>
+
+                    <option value="vacina">Vacinação</option>
+
+                    <option value="consulta">Consulta médica</option>
+
+                    <option value="urgencia">Urgência e emergência</option>
+
+                    <option value="odontologia">Atendimento odontológico</option>
+
+                </select>
+
+                <button type="submit">
+                    Buscar unidades de saúde
+                </button>
+
+                <p id="mensagem"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- TIPOS DE ATENDIMENTO -->
+
+    <section class="atendimentos" id="atendimentos">
+
+        <h2>Tipos de atendimento</h2>
+
+        <p>
+            Conheça os principais serviços públicos de saúde.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img src="imagens/Saude.jpg" alt="Unidade básica de saúde">
+
+                <h3>UBS</h3>
+
+                <p>
+                    Atendimento básico, consultas,
+                    acompanhamento médico e prevenção.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="imagens/hospital.jpg" alt="Hospital público">
+
+                <h3>Hospitais</h3>
+
+                <p>
+                    Atendimento hospitalar,
+                    internações e procedimentos especializados.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="imagens/Vacinação contra a gripe é ampliada para toda a população de São Paulo a partir de segunda-feira ___.jpeg" alt="Vacinação">
+
+                <h3>Vacinação</h3>
+
+                <p>
+                    Acesso às campanhas de vacinação
+                    e imunização oferecidas pelo SUS.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="imagens/5 Questions Your Doctor Wishes You’d Ask.jpeg" alt="Consulta médica">
+
+                <h3>Consultas médicas</h3>
+
+                <p>
+                    Orientações para encontrar atendimento
+                    médico na rede pública.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="imagens/download (1).jpeg" alt="Atendimento de urgência">
+
+                <h3>Urgência e emergência</h3>
+
+                <p>
+                    Informações sobre UPAs e serviços
+                    de atendimento de emergência.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="imagens/dentista.jpg" alt="Atendimento odontológico">
+
+                <h3>Saúde bucal</h3>
+
+                <p>
+                    Informações sobre atendimento
+                    odontológico na rede pública.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DOCUMENTOS -->
+
+    <section class="documentos">
+
+        <h2>Quais documentos levar?</h2>
+
+        <p>
+            Para facilitar seu atendimento na rede pública,
+            tenha em mãos, quando disponíveis:
+        </p>
+
+        <div class="lista-documentos">
+
+            <div>✔ Documento de identidade (RG)</div>
+
+            <div>✔ CPF</div>
+
+            <div>✔ Cartão Nacional de Saúde (Cartão SUS)</div>
+
+            <div>✔ Comprovante de residência</div>
+
+            <div>✔ Exames e receitas anteriores, se houver</div>
+
+        </div>
+
+        <p class="aviso">
+            Atenção: os documentos podem variar conforme
+            o tipo de atendimento. Em situações de urgência,
+            não deixe de procurar ajuda por falta de documentos.
+        </p>
+
+    </section>
+
+
+    <!-- ORIENTAÇÃO -->
+
+    <section class="orientacao">
+
+        <h2>Precisa de atendimento?</h2>
+
+        <p>
+            O SUS oferece atendimento gratuito à população.
+            Consulte a unidade responsável pela sua região
+            para receber orientações sobre os serviços disponíveis.
+        </p>
+
+        <a href="consulta.html" class="botao">
+            Voltar para as categorias
+        </a>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <h3>Onde Sou Atendido?</h3>
+
+        <p>
+            Facilitando o acesso aos serviços públicos.
+        </p>
+
+        <p>
+            © 2026 - Projeto Final
+        </p>
+
+        <a href="index.html">Voltar para o início</a>
+
+    </footer>
+
+
+    <!-- CONEXÃO COM JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

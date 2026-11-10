@@ -1,0 +1,485 @@
+
+/* =====================================
+   1. CONFIGURAÇÕES GERAIS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7fb;
+    color: #26364b;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================
+   2. CABEÇALHO E MENU
+===================================== */
+
+header {
+    background: #17365d;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f2b632;
+}
+
+
+/* =====================================
+   3. BANNERS E APRESENTAÇÕES
+===================================== */
+
+.inicio,
+.banner {
+    background: linear-gradient(120deg, #17365d, #2874a6);
+    color: white;
+    padding: 85px 8%;
+    text-align: center;
+}
+
+.inicio h1,
+.banner h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.inicio p,
+.banner p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+
+/* =====================================
+   4. BOTÕES
+===================================== */
+
+.botao {
+    display: inline-block;
+    background: #f2b632;
+    color: #17365d;
+    padding: 15px 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #e5a91d;
+    transform: translateY(-2px);
+}
+
+button {
+    transition: 0.3s;
+}
+
+
+/* =====================================
+   5. SEÇÕES DE CONTEÚDO
+===================================== */
+
+.sobre,
+.beneficios {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.sobre h2,
+.beneficios h2 {
+    color: #17365d;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* =====================================
+   6. COMO FUNCIONA E ORIENTAÇÕES
+===================================== */
+
+.como-funciona,
+.orientacoes {
+    background: white;
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.como-funciona h2,
+.orientacoes h2 {
+    color: #17365d;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+
+/* =====================================
+   7. CARTÕES E CATEGORIAS
+===================================== */
+
+.categorias,
+.atendimentos {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.categorias h2,
+.atendimentos h2 {
+    color: #17365d;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.categorias > p,
+.atendimentos > p {
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 15px;
+    border-radius: 12px;
+    color: #26364b;
+    box-shadow: 0 3px 12px #00000010;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px #00000020;
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #2874a6;
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.icone {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+
+/* =====================================
+   8. CONSULTA E PESQUISA DE CEP
+===================================== */
+
+.consulta,
+.pesquisa {
+    padding: 75px 8%;
+    background: #e8f1fa;
+    text-align: center;
+}
+
+.consulta h2,
+.pesquisa h2 {
+    color: #17365d;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.consulta > p,
+.pesquisa > p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.formulario,
+.caixa-consulta,
+.caixa {
+    background: white;
+    max-width: 550px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000015;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    font-size: 16px;
+    background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2874a6;
+}
+
+.formulario button,
+.caixa-consulta button,
+.caixa button {
+    width: 100%;
+    padding: 15px;
+    background: #17365d;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario button:hover,
+.caixa-consulta button:hover,
+.caixa button:hover {
+    background: #2874a6;
+}
+
+
+/* =====================================
+   9. PÁGINAS DE SAÚDE, EDUCAÇÃO
+   E ASSISTÊNCIA SOCIAL
+===================================== */
+
+.documentos,
+.orientacao {
+    padding: 65px 8%;
+    text-align: center;
+    background: white;
+}
+
+.documentos h2,
+.orientacao h2 {
+    color: #17365d;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.documentos p,
+.orientacao p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+}
+
+.lista-documentos {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.lista-documentos div {
+    background: #f4f7fb;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.aviso {
+    color: #555;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+
+/* =====================================
+   10. RESULTADOS DAS CONSULTAS
+===================================== */
+
+.resultados {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.resultados h1,
+.resultados h2 {
+    color: #17365d;
+    margin-bottom: 20px;
+}
+
+.resultado-card {
+    background: white;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.resultado-card img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.resultado-card h3 {
+    color: #2874a6;
+    margin-bottom: 10px;
+}
+
+.resultado-card p {
+    line-height: 1.7;
+}
+
+.resultado-card a {
+    color: #2874a6;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   11. RODAPÉ
+===================================== */
+
+footer {
+    background: #17365d;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+footer a {
+    color: #f2b632;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   12. RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .inicio h1,
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .inicio p,
+    .banner p {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .formulario,
+    .caixa-consulta,
+    .caixa {
+        padding: 25px;
+    }
+
+    .resultado-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resultado-card img {
+        width: 100%;
+        height: 190px;
+    }
+
+}
