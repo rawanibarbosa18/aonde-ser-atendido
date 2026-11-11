@@ -1,6 +1,5 @@
-
 /* =====================================
-   1. CONFIGURAÇÕES GERAIS
+    1. CONFIGURAÇÕES GERAIS
 ===================================== */
 
 * {
@@ -15,8 +14,8 @@ html {
 }
 
 body {
-    background: #f4f7fb;
-    color: #26364b;
+    background: #fcfbfe; /* Branco creme bem suave com toque lilás */
+    color: #43384a;
 }
 
 img {
@@ -30,22 +29,24 @@ a {
 
 
 /* =====================================
-   2. CABEÇALHO E MENU
+    2. CABEÇALHO E MENU
 ===================================== */
 
 header {
-    background: #17365d;
+    background: #79618b; /* Lilás escuro/sofisticado */
     color: white;
     padding: 22px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    box-shadow: 0 2px 10px rgba(121, 97, 139, 0.15);
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 nav {
@@ -55,23 +56,23 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #f3eff7;
     font-size: 15px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #f2b632;
+    color: #f7cbd7; /* Rosa claro no hover */
 }
 
 
 /* =====================================
-   3. BANNERS E APRESENTAÇÕES
+    3. BANNERS E APRESENTAÇÕES
 ===================================== */
 
 .inicio,
 .banner {
-    background: linear-gradient(120deg, #17365d, #2874a6);
+    background: linear-gradient(135deg, #79618b, #9d82b0); /* Degradê em lilás */
     color: white;
     padding: 85px 8%;
     text-align: center;
@@ -81,6 +82,7 @@ nav a:hover {
 .banner h1 {
     font-size: 38px;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .inicio p,
@@ -89,47 +91,67 @@ nav a:hover {
     margin: auto;
     line-height: 1.7;
     font-size: 17px;
+    color: #f3eff7;
 }
 
 
 /* =====================================
-   4. BOTÕES
+    4. BOTÕES (TODOS EM ROSA)
 ===================================== */
 
-.botao {
+.botao,
+button,
+.formulario button,
+.caixa-consulta button,
+.caixa button {
     display: inline-block;
-    background: #f2b632;
-    color: #17365d;
+    width: 100%; /* Garante largura total nos formulários */
+    max-width: 300px; /* Mantém um limite para botões centrais */
+    background: #d87093; /* Rosa vibrante e elegante */
+    color: #ffffff;
     padding: 15px 30px;
-    margin-top: 30px;
+    margin-top: 20px;
+    border: none;
     border-radius: 8px;
+    font-size: 16px;
     font-weight: bold;
+    text-align: center;
+    cursor: pointer;
     transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(216, 112, 147, 0.2);
 }
 
-.botao:hover {
-    background: #e5a91d;
+/* Ajuste específico para a classe .botao para não esticar demais na home */
+.botao {
+    width: auto;
+    max-width: none;
+    margin-top: 30px;
+}
+
+.botao:hover,
+button:hover,
+.formulario button:hover,
+.caixa-consulta button:hover,
+.caixa button:hover {
+    background: #c25b7e;
     transform: translateY(-2px);
 }
 
-button {
-    transition: 0.3s;
-}
-
 
 /* =====================================
-   5. SEÇÕES DE CONTEÚDO
+    5. SEÇÕES DE CONTEÚDO
 ===================================== */
 
 .sobre,
 .beneficios {
     padding: 70px 10%;
     text-align: center;
+    background: #ffffff;
 }
 
 .sobre h2,
 .beneficios h2 {
-    color: #17365d;
+    color: #79618b;
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -139,41 +161,43 @@ button {
     margin: auto;
     line-height: 1.8;
     font-size: 17px;
+    color: #5c4e66;
 }
 
 
 /* =====================================
-   6. COMO FUNCIONA E ORIENTAÇÕES
+    6. COMO FUNCIONA E ORIENTAÇÕES
 ===================================== */
 
 .como-funciona,
 .orientacoes {
-    background: white;
+    background: #fcfbfe;
     padding: 65px 8%;
     text-align: center;
 }
 
 .como-funciona h2,
 .orientacoes h2 {
-    color: #17365d;
+    color: #79618b;
     font-size: 30px;
     margin-bottom: 35px;
 }
 
 
 /* =====================================
-   7. CARTÕES E CATEGORIAS
+    7. CARTÕES E CATEGORIAS
 ===================================== */
 
 .categorias,
 .atendimentos {
     padding: 65px 8%;
     text-align: center;
+    background: #fcfbfe;
 }
 
 .categorias h2,
 .atendimentos h2 {
-    color: #17365d;
+    color: #79618b;
     font-size: 30px;
     margin-bottom: 15px;
 }
@@ -182,6 +206,7 @@ button {
 .atendimentos > p {
     margin-bottom: 35px;
     line-height: 1.6;
+    color: #6a5b75;
 }
 
 .cards {
@@ -196,15 +221,17 @@ button {
     width: 280px;
     padding: 15px;
     border-radius: 12px;
-    color: #26364b;
-    box-shadow: 0 3px 12px #00000010;
+    color: #43384a;
+    box-shadow: 0 4px 15px rgba(121, 97, 139, 0.08);
     transition: 0.3s;
     overflow: hidden;
+    text-align: left;
+    border: 1px solid #f0eaf4;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 18px #00000020;
+    box-shadow: 0 8px 22px rgba(121, 97, 139, 0.15);
 }
 
 .card img {
@@ -216,13 +243,14 @@ button {
 }
 
 .card h3 {
-    color: #2874a6;
+    color: #79618b;
     margin-bottom: 12px;
 }
 
 .card p {
     line-height: 1.6;
     font-size: 14px;
+    color: #6a5b75;
 }
 
 .icone {
@@ -232,19 +260,19 @@ button {
 
 
 /* =====================================
-   8. CONSULTA E PESQUISA DE CEP
+    8. CONSULTA E PESQUISA
 ===================================== */
 
 .consulta,
 .pesquisa {
     padding: 75px 8%;
-    background: #e8f1fa;
+    background: #f4eef8; /* Lilás bem claro de fundo */
     text-align: center;
 }
 
 .consulta h2,
 .pesquisa h2 {
-    color: #17365d;
+    color: #79618b;
     font-size: 30px;
     margin-bottom: 15px;
 }
@@ -253,6 +281,7 @@ button {
 .pesquisa > p {
     margin-bottom: 25px;
     line-height: 1.6;
+    color: #6a5b75;
 }
 
 .formulario,
@@ -263,7 +292,8 @@ button {
     margin: auto;
     padding: 35px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px #00000015;
+    box-shadow: 0 6px 20px rgba(121, 97, 139, 0.08);
+    border: 1px solid #e3d5ed;
 }
 
 label {
@@ -271,6 +301,7 @@ label {
     text-align: left;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #5c4e66;
 }
 
 input,
@@ -279,43 +310,24 @@ textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
-    border: 1px solid #bbb;
+    border: 1px solid #d4c5e2;
     border-radius: 7px;
     font-size: 16px;
-    background: white;
+    background: #fffdfd;
+    color: #43384a;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
     outline: none;
-    border-color: #2874a6;
-}
-
-.formulario button,
-.caixa-consulta button,
-.caixa button {
-    width: 100%;
-    padding: 15px;
-    background: #17365d;
-    color: white;
-    border: none;
-    border-radius: 7px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.formulario button:hover,
-.caixa-consulta button:hover,
-.caixa button:hover {
-    background: #2874a6;
+    border-color: #9d82b0;
+    background: white;
 }
 
 
 /* =====================================
-   9. PÁGINAS DE SAÚDE, EDUCAÇÃO
-   E ASSISTÊNCIA SOCIAL
+    9. PÁGINAS DE CONTEÚDO E DOCUMENTOS
 ===================================== */
 
 .documentos,
@@ -327,7 +339,7 @@ textarea:focus {
 
 .documentos h2,
 .orientacao h2 {
-    color: #17365d;
+    color: #79618b;
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -337,30 +349,34 @@ textarea:focus {
     max-width: 750px;
     margin: 0 auto 25px;
     line-height: 1.7;
+    color: #6a5b75;
 }
 
 .lista-documentos {
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
     text-align: left;
 }
 
 .lista-documentos div {
-    background: #f4f7fb;
+    background: #fcfbfe;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 7px;
+    line-height: 1.6;
+    border-left: 4px solid #d87093; /* Detalhe em rosa */
+    color: #43384a;
 }
 
 .aviso {
-    color: #555;
+    color: #7d6e87;
     font-size: 14px;
     margin-top: 25px;
 }
 
 
 /* =====================================
-   10. RESULTADOS DAS CONSULTAS
+    10. RESULTADOS DAS CONSULTAS
 ===================================== */
 
 .resultados {
@@ -370,7 +386,7 @@ textarea:focus {
 
 .resultados h1,
 .resultados h2 {
-    color: #17365d;
+    color: #79618b;
     margin-bottom: 20px;
 }
 
@@ -384,7 +400,8 @@ textarea:focus {
     align-items: center;
     gap: 20px;
     text-align: left;
-    box-shadow: 0 3px 12px #00000010;
+    box-shadow: 0 4px 15px rgba(121, 97, 139, 0.08);
+    border: 1px solid #f0eaf4;
 }
 
 .resultado-card img {
@@ -395,26 +412,27 @@ textarea:focus {
 }
 
 .resultado-card h3 {
-    color: #2874a6;
+    color: #79618b;
     margin-bottom: 10px;
 }
 
 .resultado-card p {
     line-height: 1.7;
+    color: #6a5b75;
 }
 
 .resultado-card a {
-    color: #2874a6;
+    color: #d87093;
     font-weight: bold;
 }
 
 
 /* =====================================
-   11. RODAPÉ
+    11. RODAPÉ
 ===================================== */
 
 footer {
-    background: #17365d;
+    background: #79618b;
     color: white;
     text-align: center;
     padding: 30px;
@@ -422,7 +440,7 @@ footer {
 }
 
 footer a {
-    color: #f2b632;
+    color: #f7cbd7;
     text-decoration: none;
 }
 
@@ -432,7 +450,7 @@ footer a:hover {
 
 
 /* =====================================
-   12. RESPONSIVIDADE
+    12. RESPONSIVIDADE
 ===================================== */
 
 @media (max-width: 700px) {

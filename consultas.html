@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Onde Sou Atendido?</title>
+    <title>Categorias - Onde Sou Atendido?</title>
 
     <!-- CONEXÃO COM O CSS -->
     <link rel="stylesheet" href="style.css">
@@ -14,107 +14,107 @@
 
 <body>
 
-<!-- CATEGORIAS -->
+    <!-- CABEÇALHO -->
+    <header>
 
-<section class="categorias" id="categorias">
+        <div class="logo">
+            Onde Sou Atendido?
+        </div>
 
-    <h2>Escolha uma categoria</h2>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="consultas.html">Categorias</a>
+            <a href="ajuda.html">Ajuda</a>
+        </nav>
 
-    <p>
-        Selecione o tipo de serviço público que deseja encontrar.
-    </p>
+    </header>
 
-    <div class="cards">
+    <!-- CATEGORIAS -->
+    <section class="categorias" id="categorias">
 
-        <!-- SAÚDE -->
+        <h2>Escolha uma categoria</h2>
 
-        <a href="saude.html" class="card">
+        <p>
+            Selecione o tipo de serviço público que deseja encontrar.
+        </p>
 
-            <img src="imagens/saude.jpg" alt="Unidade de saúde">
+        <div class="cards">
 
-            <h3>Saúde</h3>
+            <!-- SAÚDE -->
+            <a href="saude.html" class="card">
+                <img src="imagens/saude.jpg" alt="Unidade de saúde">
+                <h3>Saúde</h3>
+                <p>
+                    UBS, hospitais, vacinação e postos de saúde.
+                </p>
+            </a>
 
-            <p>
-                UBS, hospitais, vacinação e postos de saúde.
-            </p>
+            <!-- EDUCAÇÃO -->
+            <a href="educaçao.html" class="card">
+                <img src="imagens/educaçao.jpeg" alt="Escola pública">
+                <h3>Educação</h3>
+                <p>
+                    Escolas, creches e matrículas escolares.
+                </p>
+            </a>
 
-        </a>
+            <!-- ASSISTÊNCIA SOCIAL -->
+            <a href="assitencia.html" class="card">
+                <img src="imagens/assistencia.jpeg" alt="Atendimento de assistência social">
+                <h3>Assistência Social</h3>
+                <p>
+                    CRAS, Cadastro Único e benefícios sociais.
+                </p>
+            </a>
 
+            <!-- PREFEITURA -->
+            <a href="prefeitura.html" class="card">
+                <img src="imagens/prefeitura.jpeg" alt="Prédio da prefeitura">
+                <h3>Prefeitura</h3>
+                <p>
+                    Documentos, protocolos e serviços municipais.
+                </p>
+            </a>
 
-        <!-- EDUCAÇÃO -->
+            <!-- TRANSPORTE -->
+            <a href="transporte.html" class="card">
+                <img src="imagens/transporte.jpeg" alt="Transporte público">
+                <h3>Transporte</h3>
+                <p>
+                    Transporte público, passe livre e terminais.
+                </p>
+            </a>
 
-        <a href="resultados.html?categoria=educacao" class="card">
+            <!-- TRABALHO -->
+            <a href="trabalho.html" class="card">
+                <img src="imagens/trabalho.jpeg" alt="Carteira de trabalho">
+                <h3>Trabalho</h3>
+                <p>
+                    Vagas de emprego, seguro-desemprego e direitos.
+                </p>
+            </a>
 
-            <img src="imagens/educacao.jpg" alt="Escola pública">
+        </div>
 
-            <h3>Educação</h3>
+    </section>
 
-            <p>
-                Escolas, creches e matrículas escolares.
-            </p>
+    <!-- RODAPÉ -->
+    <footer>
 
-        </a>
+        <h3>Onde Sou Atendido?</h3>
 
+        <p>
+            Facilitando o acesso aos serviços públicos.
+        </p>
 
-        <!-- ASSISTÊNCIA SOCIAL -->
+        <p>
+            © 2026 - Projeto Final
+        </p>
 
-        <a href="resultados.html?categoria=assistencia" class="card">
+        <a href="index.html">Voltar para o início</a>
 
-            <img src="imagens/assistencia.jpg" alt="Atendimento de assistência social">
+    </footer>
 
-            <h3>Assistência Social</h3>
+</body>
 
-            <p>
-                CRAS, Cadastro Único e benefícios sociais.
-            </p>
-
-        </a>
-
-
-        <!-- PREFEITURA -->
-
-        <a href="resultados.html?categoria=prefeitura" class="card">
-
-            <img src="imagens/prefeitura.jpg" alt="Prédio da prefeitura">
-
-            <h3>Prefeitura</h3>
-
-            <p>
-                Documentos, protocolos e serviços municipais.
-            </p>
-
-        </a>
-
-
-        <!-- TRANSPORTE -->
-
-        <a href="resultados.html?categoria=transporte" class="card">
-
-            <img src="imagens/transporte.jpg" alt="Transporte público">
-
-            <h3>Transporte</h3>
-
-            <p>
-                Transporte público, passe livre e terminais.
-            </p>
-
-        </a>
-
-
-        <!-- TRABALHO -->
-
-        <a href="resultados.html?categoria=trabalho" class="card">
-
-            <img src="imagens/trabalho.jpg" alt="Atendimento ao trabalhador">
-
-            <h3>Trabalho</h3>
-
-            <p>
-                Vagas de emprego e atendimento ao trabalhador.
-            </p>
-
-        </a>
-
-    </div>
-
-</section>
+</html>

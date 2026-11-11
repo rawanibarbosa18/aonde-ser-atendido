@@ -1,270 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Saúde - Onde Sou Atendido?</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
-
     <header>
-
-        <div class="logo">
-            Onde Sou Atendido?
-        </div>
-
+        <div class="logo">Onde Sou Atendido?</div>
         <nav>
             <a href="index.html">Início</a>
-            <a href="consulta.html">Categorias</a>
+            <a href="consultas.html">Categorias</a>
+            <a href="ajuda.html">Ajuda</a>
         </nav>
-
     </header>
 
-
-    <!-- PESQUISA -->
-
-    <section class="pesquisa" id="pesquisar">
-
-        <h2>Encontre uma unidade de saúde</h2>
-
+    <section class="banner">
+        <h1>Saúde e Atendimento pelo SUS</h1>
         <p>
-            Informe o CEP da região onde deseja atendimento.
+            Conheça os serviços de saúde pública, os níveis de atendimento,
+            os documentos necessários e os direitos garantidos a todo cidadão pelo SUS.
         </p>
-
-        <div class="caixa">
-
-            <form id="formBusca">
-
-                <label for="cep">Digite seu CEP:</label>
-
-                <input
-                    type="text"
-                    id="cep"
-                    name="cep"
-                    placeholder="Ex.: 01001-000"
-                    maxlength="9"
-                    pattern="[0-9]{5}-?[0-9]{3}"
-                    required
-                >
-
-                <label for="tipo">Tipo de atendimento:</label>
-
-                <select id="categoria" name="categoria" required>
-
-                    <option value="">Selecione uma opção</option>
-
-                    <option value="ubs">UBS</option>
-
-                    <option value="hospital">Hospital</option>
-
-                    <option value="vacina">Vacinação</option>
-
-                    <option value="consulta">Consulta médica</option>
-
-                    <option value="urgencia">Urgência e emergência</option>
-
-                    <option value="odontologia">Atendimento odontológico</option>
-
-                </select>
-
-                <button type="submit">
-                    Buscar unidades de saúde
-                </button>
-
-                <p id="mensagem"></p>
-
-            </form>
-
-        </div>
-
     </section>
 
-
-    <!-- TIPOS DE ATENDIMENTO -->
-
-    <section class="atendimentos" id="atendimentos">
-
+    <section class="atendimentos">
         <h2>Tipos de atendimento</h2>
-
-        <p>
-            Conheça os principais serviços públicos de saúde.
-        </p>
+        <p>Conheça os principais serviços públicos de saúde disponíveis para você.</p>
 
         <div class="cards">
-
             <div class="card">
-
-                <img src="imagens/Saude.jpg" alt="Unidade básica de saúde">
-
-                <h3>UBS</h3>
-
-                <p>
-                    Atendimento básico, consultas,
-                    acompanhamento médico e prevenção.
-                </p>
-
+                <img src="imagens/Saude.jpg" alt="UBS">
+                <h3>UBS (Posto de Saúde)</h3>
+                <p>Atendimento básico, consultas de rotina, acompanhamento médico, vacinação e prevenção.</p>
             </div>
-
-
             <div class="card">
-
-                <img src="imagens/hospital.jpg" alt="Hospital público">
-
-                <h3>Hospitais</h3>
-
-                <p>
-                    Atendimento hospitalar,
-                    internações e procedimentos especializados.
-                </p>
-
+                <img src="imagens/download (1).jpeg" alt="UPA">
+                <h3>UPA (Urgência e Emergência)</h3>
+                <p>Atendimento intermediário de urgência para casos de pressão alta, febre alta, fraturas e mal súbito.</p>
             </div>
-
-
             <div class="card">
-
+                <img src="imagens/hospital.jpg" alt="Hospitais">
+                <h3>Hospitais Públicos</h3>
+                <p>Atendimento hospitalar de alta complexidade, cirurgias, internações e pronto-socorro geral.</p>
+            </div>
+            <div class="card">
                 <img src="imagens/Vacinação contra a gripe é ampliada para toda a população de São Paulo a partir de segunda-feira ___.jpeg" alt="Vacinação">
-
                 <h3>Vacinação</h3>
-
-                <p>
-                    Acesso às campanhas de vacinação
-                    e imunização oferecidas pelo SUS.
-                </p>
-
+                <p>Acesso gratuito a todas as vacinas do calendário nacional de imunização.</p>
             </div>
-
-
             <div class="card">
-
-                <img src="imagens/5 Questions Your Doctor Wishes You’d Ask.jpeg" alt="Consulta médica">
-
-                <h3>Consultas médicas</h3>
-
-                <p>
-                    Orientações para encontrar atendimento
-                    médico na rede pública.
-                </p>
-
+                <img src="imagens/5 Questions Your Doctor Wishes You’d Ask.jpeg" alt="Consultas médicas">
+                <h3>Especialidades Médicas</h3>
+                <p>Consultas com especialistas (cardiologista, pediatra, etc.) mediante encaminhamento da UBS.</p>
             </div>
-
-
             <div class="card">
-
-                <img src="imagens/download (1).jpeg" alt="Atendimento de urgência">
-
-                <h3>Urgência e emergência</h3>
-
-                <p>
-                    Informações sobre UPAs e serviços
-                    de atendimento de emergência.
-                </p>
-
+                <img src="imagens/dentista.jpeg" alt="Saúde bucal">
+                <h3>Saúde Bucal (CEO)</h3>
+                <p>Atendimento odontológico preventivo e cirúrgico oferecido na rede pública.</p>
             </div>
-
-
-            <div class="card">
-
-                <img src="imagens/dentista.jpg" alt="Atendimento odontológico">
-
-                <h3>Saúde bucal</h3>
-
-                <p>
-                    Informações sobre atendimento
-                    odontológico na rede pública.
-                </p>
-
-            </div>
-
         </div>
-
     </section>
 
-
-    <!-- DOCUMENTOS -->
-
     <section class="documentos">
-
-        <h2>Quais documentos levar?</h2>
-
-        <p>
-            Para facilitar seu atendimento na rede pública,
-            tenha em mãos, quando disponíveis:
-        </p>
+        <h2>Direitos do Usuário do SUS</h2>
+        <p>A legislação garante direitos fundamentais a todos os pacientes da rede pública:</p>
 
         <div class="lista-documentos">
+            <div>✔ <strong>Atendimento Universal e Gratuito:</strong> Acesso à saúde garantido pela Constituição Federal, sem cobrança de taxas.</div>
+            <div>✔ <strong>Prioridade por Lei:</strong> Atendimento prioritário para idosos, gestantes, lactantes, pessoas com deficiência e crianças de colo.</div>
+            <div>✔ <strong>Direito a Acompanhante:</strong> Garantia de acompanhante nos casos de internação, parto e para pacientes idosos ou menores de idade.</div>
+            <div>✔ <strong>Acesso a Medicamentos (Farmácia Popular):</strong> Dispensação gratuita de remédios essenciais nas unidades de saúde e farmácias parceiras.</div>
+            <div>✔ <strong>Sigilo Médico:</strong> Proteção total das informações de prontuário, exames e diagnósticos do paciente.</div>
+        </div>
+    </section>
 
-            <div>✔ Documento de identidade (RG)</div>
+    <section class="documentos">
+        <h2>Documentos necessários</h2>
+        <p>Para facilitar seu atendimento na rede pública, tenha em mãos:</p>
 
-            <div>✔ CPF</div>
-
-            <div>✔ Cartão Nacional de Saúde (Cartão SUS)</div>
-
-            <div>✔ Comprovante de residência</div>
-
-            <div>✔ Exames e receitas anteriores, se houver</div>
-
+        <div class="lista-documentos">
+            <div>✔ Documento de identidade (RG ou CNH).</div>
+            <div>✔ CPF.</div>
+            <div>✔ Cartão Nacional de Saúde (Cartão SUS).</div>
+            <div>✔ Comprovante de residência recente.</div>
+            <div>✔ Exames, receitas anteriores e encaminhamentos (se houver).</div>
         </div>
 
         <p class="aviso">
-            Atenção: os documentos podem variar conforme
-            o tipo de atendimento. Em situações de urgência,
-            não deixe de procurar ajuda por falta de documentos.
+            Atenção: em situações de urgência e emergência (risco de morte), o atendimento é prestado imediatamente, independentemente da apresentação de documentos.
         </p>
-
     </section>
-
-
-    <!-- ORIENTAÇÃO -->
 
     <section class="orientacao">
-
-        <h2>Precisa de atendimento?</h2>
-
+        <h2>Onde procurar atendimento?</h2>
         <p>
-            O SUS oferece atendimento gratuito à população.
-            Consulte a unidade responsável pela sua região
-            para receber orientações sobre os serviços disponíveis.
+            Para consultas de rotina e vacinas, procure a <strong>Unidade Básica de Saúde (UBS)</strong> do seu bairro. Em casos de urgência súbita, dirija-se a uma <strong>UPA</strong> ou <strong>Hospital</strong>.
         </p>
-
-        <a href="consulta.html" class="botao">
-            Voltar para as categorias
-        </a>
-
+        <br>
+        <a href="consultas.html" class="botao">Voltar para as categorias</a>
     </section>
 
-
-    <!-- RODAPÉ -->
-
     <footer>
-
         <h3>Onde Sou Atendido?</h3>
-
-        <p>
-            Facilitando o acesso aos serviços públicos.
-        </p>
-
-        <p>
-            © 2026 - Projeto Final
-        </p>
-
+        <p>Facilitando o acesso aos serviços públicos.</p>
+        <p>© 2026 - Projeto Final</p>
         <a href="index.html">Voltar para o início</a>
-
     </footer>
 
-
-    <!-- CONEXÃO COM JAVASCRIPT -->
-
-    <script src="script.js"></script>
-
 </body>
-
 </html>
